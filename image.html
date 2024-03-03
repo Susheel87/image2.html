@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Image Hover Text</title>
+<style>
+  .image-container {
+    border: 3px solid black;
+    display: inline-block;
+    position: relative;
+  }
+  .image-container img {
+    width: 30px;
+    height: 30px;
+  }
+  .image-container .hover-text {
+    visibility: hidden;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+  }
+  .image-container:hover .hover-text {
+    visibility: visible;
+  }
+</style>
+</head>
+<body>
+
+<div class="image-container">
+  <img src="dog 1.jpg" alt="dog" width="30" height="30">
+  <div style="color: blue;" class="hover-text">I am Image in Webpage</div>
+</div>
+
+</body>
+</html>
+
+
+ 
